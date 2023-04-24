@@ -1,0 +1,47 @@
+
+.tabla {
+    margin-top: 10%;
+    margin-left: 37%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e d"
+        "g h";
+    width: 30%;
+}
+.combinada {
+    grid-area: d;
+}
+.celda {
+    border: 0.08em solid #388fa2;
+}
+.oscura1 {
+    grid-area: g;
+}
+.combinada, .oscura, .reducida {
+    width: 50%;
+    border-right: 0.16em solid #388fa2;
+}
+.titulo, .titulo1, .combinada, .oscura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo, .titulo1 {
+    background-color: #003334;
+    color: #cbfed2;
+    border-top: #388fa2 0.16em solid;
+}
+.oscura, .oscura1 {
+    background-color: #9acc99;
+    border-bottom: #388fa2 solid 0.16em;
+}
+.titulo1, .iii, .v, .oscura1 {
+    border-left: 0.16em solid #388fa2;
+}
+.iii, .v, .combinada {
+    background-color: #cbfed2;
+}
